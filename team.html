@@ -1,0 +1,57 @@
+---
+layout: default
+class: about-page
+title: The Team
+---
+
+{% capture caption %}
+    The Munro building at Silwood Park, home to many of the MGR labs. Photo by Imperial College London.
+{% endcapture %}
+
+{% assign image_url = '/assets/images/banners/silwood_munro_corner_banner.jpg' | prepend: site.baseurl %}
+{% include heroes/captioned_hero.html
+  title='The Team'
+  caption=caption
+  image=image_url
+%}
+
+<div class='center-column'>
+
+  {% include text/center_section_title.html
+    text='OUR PROJECT MEMBERS'
+  %}
+
+  <div class='color-background circle-caret'>
+    {% assign team_members = site.team | sort: 'name' %}
+    {% for team_member in team_members %}
+      {% include about/team_member.html team_member=team_member %}
+    {% endfor %}
+  </div>
+
+<!-- If you decide to split the team into groups, you can use the additional code below -->
+<!--
+  {% include text/center_section_title.html
+    text='OUR PROJECT STAFF'
+    id='staff'
+  %}
+
+  <div class='color-background circle-caret'>
+    {% assign team_members = site.team | where:'group','staff' | sort: 'order' %}
+    {% for team_member in team_members %}
+      {% include about/team_member.html team_member=team_member %}
+    {% endfor %}
+  </div>
+
+  {% include text/center_section_title.html
+    text='COLLABORATING RESEARCHERS'
+    id='collaborators'
+  %}
+
+  <div class='color-background circle-caret'>
+    {% assign team_members = site.team | where:'group','collaborators' | sort: 'order' %}
+    {% for team_member in team_members %}
+      {% include about/team_member.html team_member=team_member %}
+    {% endfor %}
+  </div>
+-->
+</div>

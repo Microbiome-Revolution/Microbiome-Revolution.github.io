@@ -1,0 +1,33 @@
+---
+title: Index
+layout: default
+class: about-page
+order: 1
+caption:
+---
+
+{% assign image_url = '/assets/images/banners/wheat_field.png' | prepend: site.baseurl %}
+{% include heroes/captioned_hero.html
+  title='Utilising microbes to protect crops from pathogens'
+  subtitle='Pioneering research into wheat take-all disease being carried out at Imperial College London, Silwood Park.'
+  caption=caption
+  image=image_url
+  class='about-hero-override'
+%}
+
+<div class="centered-text-box">
+  <p class="main-text">
+    We are working with farmers across the UK to enhance crop yields sustainably by optimising the microbial communities of the soil our crops grow in.
+  </p>
+  <p class="bold-text">
+    See our <a href="about.html">About</a> page to read more about our mission.
+  </p>
+</div>
+
+{% assign image_url = '/assets/images/banners/220922_waring_lab_silwood_005.jpg' | prepend: site.baseurl %}
+<div class="hero background-image about-hero-override"
+     style="background-image: url('{{ image_url }}'); background-position: center 55%; background-size: cover;">
+  <div class="hero-text-container">
+    <div class="hero-caption">{{ caption }}</div>
+  </div>
+</div>

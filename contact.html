@@ -1,0 +1,42 @@
+---
+title: Contact Us
+layout: default
+class: about-page
+order: 3
+caption:
+
+---
+{% capture caption %}
+  View of the Manor House at the Silwood Park campus. Photo by Dan Weill.
+{% endcapture %}
+
+{% assign image_url = '/assets/images/banners/silwood_banner.jpg' | prepend: site.baseurl %}
+{% include heroes/captioned_hero.html
+  title='Contact Us'
+  caption=caption
+  image=image_url
+%}
+
+<div class='center-column'>
+  <div class='two-column-container one-third-width top-text'>
+    <div class='right-column'>
+      <h2>Contribute</h2>
+      <p>If you are a farmer looking assist in data collection, a researcher looking to collaborate, or an organisation looking to fund our research, please do not hesitate to reach out to us. </p>
+      <a href='mailto:b.waring@imperial.ac.uk' class='color-button' target='_blank'>E-mail Us</a>
+
+
+      <h2 class='subheading'>Where to Find Us</h2>
+      <p>Located within the Silwood Park campus of Imperial College London in Sunningdale, the collaborating labs of the Microbiome Green Revolution can be found in the Munro, Kennedy, and Centre for Population Biology buildings.    
+      </p>
+      <br/>
+      <iframe src="https://maps.google.com/maps?width=520&amp;height=255&amp;hl=en&amp;q=%20+(Silwood%20Park)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <p>
+	Silwood Park Campus<br/>
+        Imperial College London<br/>
+        Buckhurst Rd, Berks SL5 7PY, UK<br/>
+      </p>
+
+
+    </div>
+  </div>
+</div>

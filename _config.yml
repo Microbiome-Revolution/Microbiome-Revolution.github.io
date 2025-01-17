@@ -1,0 +1,111 @@
+url: icgk523.github.io
+baseurl: /mgr.github.io
+
+
+# render posts with dates in the future
+future: true
+
+# minify html in production
+minify_html: true
+
+# create lunr index
+create_index: true
+
+# bust cache
+bust_cache: true
+
+# minify js
+compress_js: true
+
+# minify assets
+sass:
+  style: compressed
+  load_paths: 
+    - node_modules
+
+# render collections
+collections:
+  resources:
+    output: false
+  events:
+    output: false
+  news:
+    output: false
+  projects:
+    output: false
+  guides:
+    output: false
+  methods:
+    output: false
+  awards:
+    output: false
+  opportunities:
+    output: false
+  team:
+    output: false
+  about:
+    output: false
+
+# default layouts
+defaults:
+  - scope:
+      path: ''
+      type: 'news'
+    values:
+      layout: news
+  - scope:
+      path: ''
+      type: 'events'
+    values:
+      layout: event
+  - scope:
+      path: ''
+      type: 'guides'
+    values:
+      layout: guide
+  - scope:
+      path: ''
+      type: 'methods'
+    values:
+      layout: method
+  - scope:
+      path: ''
+      type: 'projects'
+    values:
+      layout: project
+  - scope:
+      path: ''
+      type: 'resources'
+    values:
+      layout: resource
+  - scope:
+      path: ''
+      type: 'awards'
+    values:
+      layout: award
+  - scope:
+      path: ''
+      type: 'opportunities'
+    values:
+      layout: opportunity
+
+# configure gems
+plugins:
+  - octopress-minify-html
+
+# minify css and js with webpack
+keep_files:
+  - 'assets/bundle.js'
+  - 'assets/js/search/index.json'
+  - 'assets/js/search/id-to-metadata.json'
+
+# exclude node files and unwanted pages
+exclude:
+  - 'node_modules'
+  - 'utils'
+  - 'yarn.lock'
+  - 'package.json'
+  - '.jekyll-metadata'
+  - 'Gemfile.lock'
+  - 'Gemfile'
+  - 'README.md'
