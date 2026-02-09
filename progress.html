@@ -1,7 +1,7 @@
 ---
 layout: default
 class: about-page
-title: Our Team
+title: Progress
 ---
 
 {% capture caption %}
@@ -10,7 +10,7 @@ title: Our Team
 
 {% assign image_url = '/assets/images/banners/silwood_munro_corner_banner.jpg' | prepend: site.baseurl %}
 {% include heroes/captioned_hero.html
-  title='Our Team'
+  title='Current Progress'
   caption=caption
   image=image_url
 %}
@@ -18,15 +18,9 @@ title: Our Team
 <div class='center-column'>
 
   {% include text/center_section_title.html
-    text='OUR PROJECT MEMBERS'
+    text='CURRENT PROGRESS'
   %}
 
-  <div class='color-background circle-caret'>
-    {% assign team_members = site.team | sort: 'name' %}
-    {% for team_member in team_members %}
-      {% include about/team_member.html team_member=team_member %}
-    {% endfor %}
-  </div>
 
 <!-- If you decide to split the team into groups, you can use the additional code below -->
 <!--
