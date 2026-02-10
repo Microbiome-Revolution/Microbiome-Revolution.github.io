@@ -1,6 +1,6 @@
 # Microbiome Green Revolution Website
 
-This repository hosts the source code for the new website of the Microbiome Green Revolution. The website was developed using the style.scss template from the Yale DHLab website, with extensive modifications to its layout and structure.
+This repository hosts the source code for the new website of the Microbiome Green Revolution (https://microbiomerevolution.org/). The website was developed using the style.scss template from the Yale DHLab website, with extensive modifications to its layout and structure.
 
 ## Developing
 
