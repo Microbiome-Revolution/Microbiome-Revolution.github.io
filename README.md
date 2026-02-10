@@ -7,8 +7,8 @@ This repository hosts the source code for the new website of the Microbiome Gree
 First download the application source:
 
 ```
-git clone https://github.com/icgk523/mgr.github.io
-cd mgr.github.io
+git clone https://github.com/Microbiome-Revolution/Microbiome-Revolution.github.io
+cd Microbiome-Revolution.github.io
 ```
 
 ### Mac Users
